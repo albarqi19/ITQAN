@@ -1,0 +1,652 @@
+{
+  "timestamp": "٢٤‏/١١‏/١٤٤٦ هـ ٢:٢٤:٢١ ص",
+  "version": "1.0",
+  "progress": [
+    {
+      "teacher": "أيمن عوض عيد إبراهيم",
+      "students": [
+        {
+          "id": 1,
+          "name": "أمين ذوالنون علي سلامه",
+          "path": "6 أجزاء",
+          "completedPages": "120",
+          "errors": "4",
+          "isPresent": true
+        },
+        {
+          "id": 2,
+          "name": "أنس البراء البريهي",
+          "path": "6 أجزاء",
+          "completedPages": "120",
+          "errors": "7",
+          "isPresent": true
+        },
+        {
+          "id": 3,
+          "name": "سلمان سالم مزيد المطيري",
+          "path": "4 أجزاء ونصف",
+          "completedPages": "90",
+          "errors": "6",
+          "isPresent": true
+        },
+        {
+          "id": 4,
+          "name": "عبادة محمد عاطف تليخ",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "5",
+          "isPresent": true
+        },
+        {
+          "id": 5,
+          "name": "علي فوزي قايد عبده",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "4",
+          "isPresent": true
+        },
+        {
+          "id": 6,
+          "name": "فلاح محمد سالم القحطاني",
+          "path": "3 أجزاء ونصف",
+          "completedPages": "70",
+          "errors": "5",
+          "isPresent": true
+        },
+        {
+          "id": 7,
+          "name": "ماجد حمود معيض النفيعي",
+          "path": "جزئين",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 8,
+          "name": "مجد محمد المحمد",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "3",
+          "isPresent": true
+        },
+        {
+          "id": 9,
+          "name": "وليد حمود النفيعي",
+          "path": "3 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 10,
+          "name": "سليم مصلح الدوسري",
+          "path": "3 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 11,
+          "name": "الخطاب سادات فارع سعيد",
+          "path": "6 أجزاء",
+          "completedPages": "120",
+          "errors": "9",
+          "isPresent": true
+        }
+      ]
+    },
+    {
+      "teacher": "أحمد عبدالمنعم عبدالقادر عبدالله",
+      "students": [
+        {
+          "id": 1,
+          "name": "إياد حسن عبدالعظيم محمد",
+          "path": "10 أجزاء",
+          "completedPages": "110",
+          "errors": "43",
+          "isPresent": true
+        },
+        {
+          "id": 2,
+          "name": "ابراهيم حسام ابراهيم الشرافي",
+          "path": "4 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 3,
+          "name": "احمد سعيد متروك المطيري",
+          "path": "4 أجزاء",
+          "completedPages": "65",
+          "errors": "32",
+          "isPresent": true
+        },
+        {
+          "id": 4,
+          "name": "البراء محمد عبداللطيف بدر",
+          "path": "10 أجزاء",
+          "completedPages": "120",
+          "errors": "60",
+          "isPresent": true
+        },
+        {
+          "id": 5,
+          "name": "شافي عبدالرحمن محمد القحطاني",
+          "path": "5 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 6,
+          "name": "عبدالرحمن حسين  المرحبي",
+          "path": "3 أجزاء",
+          "completedPages": "35",
+          "errors": "32",
+          "isPresent": true
+        },
+        {
+          "id": 7,
+          "name": "عبدالعزيز أحمد  البارقي",
+          "path": "جزئين ونصف",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 8,
+          "name": "فراج مناحي  الدوسري",
+          "path": "3 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 9,
+          "name": "قصي محمد  عايش",
+          "path": "جزئين ونصف",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 10,
+          "name": "فالح ناصر ابراهيم الشرافي",
+          "path": "4 أجزاء ونصف",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 11,
+          "name": "محمد الناجي",
+          "path": "جزئين",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 12,
+          "name": "محمد سعد الاحمري",
+          "path": "3 أجزاء",
+          "completedPages": "55",
+          "errors": "47",
+          "isPresent": true
+        }
+      ]
+    },
+    {
+      "teacher": "أحمد أحمد سيد محمد",
+      "students": [
+        {
+          "id": 1,
+          "name": "أنصاري أنصاري أنصاري",
+          "path": "10 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 2,
+          "name": "إياد علاء محمود عبد العزيز",
+          "path": "5 أجزاء ونصف",
+          "completedPages": "81",
+          "errors": "4",
+          "isPresent": true
+        },
+        {
+          "id": 3,
+          "name": "عبدالله منصر الدوجري",
+          "path": "5 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 4,
+          "name": "يزن أحمد أحمد سيد محمد",
+          "path": "6 أجزاء ونصف",
+          "completedPages": "140",
+          "errors": "3",
+          "isPresent": true
+        },
+        {
+          "id": 5,
+          "name": "يوسف مهدي محمد الناصري",
+          "path": "3 أجزاء",
+          "completedPages": "61",
+          "errors": "1",
+          "isPresent": true
+        },
+        {
+          "id": 6,
+          "name": "عبد الكريم سعد سعيد الأحمري",
+          "path": "3 أجزاء",
+          "completedPages": "45",
+          "errors": "3",
+          "isPresent": true
+        },
+        {
+          "id": 7,
+          "name": "سعود فارس يسلم التميمي",
+          "path": "3 أجزاء",
+          "completedPages": "35",
+          "errors": "2",
+          "isPresent": true
+        },
+        {
+          "id": 8,
+          "name": "مسفر عبدالعزيز القحطاني",
+          "path": "جزء ونصف",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        }
+      ]
+    },
+    {
+      "teacher": "سعد الشيخ محمد الأنصاري",
+      "students": [
+        {
+          "id": 1,
+          "name": "عبد الفتاح سعد الشيخ محمد",
+          "path": "15 جزء",
+          "completedPages": "300",
+          "errors": "25",
+          "isPresent": true
+        },
+        {
+          "id": 2,
+          "name": "أحمد محمد عبداللطيف بدر",
+          "path": "15 جزء",
+          "completedPages": "300",
+          "errors": "12",
+          "isPresent": true
+        },
+        {
+          "id": 3,
+          "name": "أسامه مصطفى السيد الطوبجي",
+          "path": "3 أجزاء",
+          "completedPages": "40",
+          "errors": "5",
+          "isPresent": true
+        },
+        {
+          "id": 4,
+          "name": "عبدالعزيز إبراهيم عبدالعزيز أبوزينه",
+          "path": "18 جزء",
+          "completedPages": "130",
+          "errors": "8",
+          "isPresent": true
+        },
+        {
+          "id": 5,
+          "name": "عمر عبدالعزيز راشد العمرو",
+          "path": "6 أجزاء",
+          "completedPages": "120",
+          "errors": "9",
+          "isPresent": true
+        },
+        {
+          "id": 6,
+          "name": "سلطان محمد سلطان الزهراني",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "8",
+          "isPresent": true
+        },
+        {
+          "id": 7,
+          "name": "محمد أيمن مصطفى عرفات",
+          "path": "جزء واحد",
+          "completedPages": "20",
+          "errors": "5",
+          "isPresent": true
+        },
+        {
+          "id": 8,
+          "name": "معين ناصر عبدالله مسعد",
+          "path": "12 جزء",
+          "completedPages": "240",
+          "errors": "19",
+          "isPresent": true
+        },
+        {
+          "id": 9,
+          "name": "خليل ناصر عبدالله مسعد",
+          "path": "6 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 10,
+          "name": "صفوان ناصر عبدالله مسعد",
+          "path": "5 أجزاء",
+          "completedPages": "100",
+          "errors": "12",
+          "isPresent": true
+        },
+        {
+          "id": 11,
+          "name": "طه محمد عبده محمد",
+          "path": "جزء ونصف",
+          "completedPages": "30",
+          "errors": "7",
+          "isPresent": true
+        },
+        {
+          "id": 12,
+          "name": "عبدالمقيت عبدالإله الماص",
+          "path": "3 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 13,
+          "name": "مصعب عبدالله محمد البطاح",
+          "path": "6 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 14,
+          "name": "أيمن مصطفى عرفات",
+          "path": "جزئين",
+          "completedPages": "60",
+          "errors": "5",
+          "isPresent": true
+        },
+        {
+          "id": 15,
+          "name": "عبدالرخمن مغربي",
+          "path": "10 أجزاء",
+          "completedPages": "200",
+          "errors": "25",
+          "isPresent": true
+        },
+        {
+          "id": 16,
+          "name": "أيهم",
+          "path": "7 أجزاء ونصف",
+          "completedPages": "150",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 17,
+          "name": "عبدالرحمن الاحمري",
+          "path": "5 أجزاء",
+          "completedPages": "100",
+          "errors": "11",
+          "isPresent": true
+        },
+        {
+          "id": 18,
+          "name": "عبدالله هشام",
+          "path": "جزئين",
+          "completedPages": "40",
+          "errors": "6",
+          "isPresent": true
+        },
+        {
+          "id": 19,
+          "name": "عطاء ابراهيم",
+          "path": "جزء ونصف",
+          "completedPages": "30",
+          "errors": "7",
+          "isPresent": true
+        },
+        {
+          "id": 20,
+          "name": "محمد الشريف",
+          "path": "12 جزء",
+          "completedPages": "250",
+          "errors": "47",
+          "isPresent": true
+        },
+        {
+          "id": 21,
+          "name": "عطاء",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "15",
+          "isPresent": true
+        }
+      ]
+    },
+    {
+      "teacher": "السيد محمد سليمان الغيطاني",
+      "students": [
+        {
+          "id": 1,
+          "name": "أحمد عبد العزيز الخلف",
+          "path": "جزئين",
+          "completedPages": "44",
+          "errors": "9",
+          "isPresent": true
+        },
+        {
+          "id": 2,
+          "name": "تيم محمد عاطف تليخ",
+          "path": "3 أجزاء",
+          "completedPages": "63",
+          "errors": "10",
+          "isPresent": true
+        },
+        {
+          "id": 3,
+          "name": "راشد حمد علي المري",
+          "path": "جزئين",
+          "completedPages": "18",
+          "errors": "12",
+          "isPresent": true
+        },
+        {
+          "id": 4,
+          "name": "راكان منصر الدوجري",
+          "path": "جزئين ونصف",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 5,
+          "name": "سيف ايمن محمود السميري",
+          "path": "جزء واحد",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 6,
+          "name": "صالح محسن النهدي",
+          "path": "جزء ونصف",
+          "completedPages": "36",
+          "errors": "15",
+          "isPresent": true
+        },
+        {
+          "id": 7,
+          "name": "عبدالرحمن منصر الدوجري",
+          "path": "جزئين",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 8,
+          "name": "علاء الدين محمد المحمد",
+          "path": "3 أجزاء",
+          "completedPages": "65",
+          "errors": "6",
+          "isPresent": true
+        },
+        {
+          "id": 9,
+          "name": "مسفر مصلح الدوسري",
+          "path": "3 أجزاء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 10,
+          "name": "صبحي احمد عمير المعدان",
+          "path": "جزئين",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 11,
+          "name": "عبدالعزيز محمد نايف النهدي",
+          "path": "جزء ونصف",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 12,
+          "name": "ماجد سليمان راشد الطحيني",
+          "path": "نصف جزء",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 13,
+          "name": "عبدالملك سالم سعيد العلي",
+          "path": "جزئين",
+          "completedPages": "23",
+          "errors": "10",
+          "isPresent": true
+        },
+        {
+          "id": 14,
+          "name": "عبداللطيف سالم سعيد العلي",
+          "path": "جزء واحد",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        }
+      ]
+    },
+    {
+      "teacher": "أحمد عبداللطيف محمد الجمال",
+      "students": [
+        {
+          "id": 1,
+          "name": "أحمد حسن أحمد الناشري",
+          "path": "5 أجزاء",
+          "completedPages": "100",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 2,
+          "name": "أمير محمد عاطف تليخ",
+          "path": "4 أجزاء",
+          "completedPages": "60",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 3,
+          "name": "البراء حسن عبدالعظيم محمد",
+          "path": "جزئين",
+          "completedPages": "40",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 4,
+          "name": "سفيان عبدالرحمن حسن الربيّع",
+          "path": "4 أجزاء",
+          "completedPages": "100",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 5,
+          "name": "سلمان عبدالرحمن محمد القحطاني",
+          "path": "5 أجزاء",
+          "completedPages": "100",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 6,
+          "name": "عبدالرحمن إبراهيم أبو زينة",
+          "path": "جزئين",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 7,
+          "name": "عبدالرحمن سادات المحمودي",
+          "path": "4 أجزاء",
+          "completedPages": "80",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 8,
+          "name": "عبدالله عمر عبدالله الجفان",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 9,
+          "name": "عوض حسين المرحبي",
+          "path": "3 أجزاء",
+          "completedPages": "60",
+          "errors": "",
+          "isPresent": true
+        },
+        {
+          "id": 10,
+          "name": "محمد مناحي فراج الدوسري",
+          "path": "جزئين",
+          "completedPages": "",
+          "errors": "",
+          "isPresent": false
+        },
+        {
+          "id": 11,
+          "name": "عبدالملك الأحمري",
+          "path": "جزء واحد",
+          "completedPages": "20",
+          "errors": "",
+          "isPresent": true
+        }
+      ]
+    }
+  ]
+}

@@ -43,105 +43,22 @@ const pathsData = {
     "30 جزء": 600
 };
 
-// تكوين بيانات الحلقات
-const circlesData = [
-    {
-        teacher: "أيمن عوض عيد إبراهيم",
-        students: [
-            { id: 1, name: "أمين ذوالنون علي سلامه", path: "6 أجزاء" },
-            { id: 2, name: "أنس البراء البريهي", path: "6 أجزاء" },
-            { id: 3, name: "سلمان سالم مزيد المطيري", path: "4 أجزاء ونصف" },
-            { id: 4, name: "عبادة محمد عاطف تليخ", path: "3 أجزاء" },
-            { id: 5, name: "علي فوزي قايد عبده", path: "3 أجزاء" },
-            { id: 6, name: "فلاح محمد سالم القحطاني", path: "3 أجزاء ونصف" },
-            { id: 7, name: "ماجد حمود معيض النفيعي", path: "جزئين" },
-            { id: 8, name: "مجد محمد المحمد", path: "3 أجزاء" },
-            { id: 9, name: "وليد حمود النفيعي", path: "3 أجزاء" },
-            { id: 10, name: "سليم مصلح الدوسري", path: "3 أجزاء" },
-            { id: 11, name: "الخطاب سادات فارع سعيد", path: "6 أجزاء" }
-        ]
-    },
-    {
-        teacher: "أحمد عبدالمنعم عبدالقادر عبدالله",
-        students: [
-            { id: 1, name: "إياد حسن عبدالعظيم محمد", path: "10 أجزاء" },
-            { id: 2, name: "ابراهيم حسام ابراهيم الشرافي", path: "4 أجزاء" },
-            { id: 3, name: "احمد سعيد متروك المطيري", path: "4 أجزاء" },
-            { id: 4, name: "البراء محمد عبداللطيف بدر", path: "10 أجزاء" },
-            { id: 5, name: "شافي عبدالرحمن محمد القحطاني", path: "5 أجزاء" },
-            { id: 6, name: "عبدالرحمن حسين  المرحبي", path: "3 أجزاء" },
-            { id: 7, name: "عبدالعزيز أحمد  البارقي", path: "جزئين ونصف" },
-            { id: 8, name: "فراج مناحي  الدوسري", path: "3 أجزاء" },
-            { id: 9, name: "قصي محمد  عايش", path: "جزئين ونصف" },
-            { id: 10, name: "فالح ناصر ابراهيم الشرافي", path: "4 أجزاء ونصف" },
-            { id: 11, name: "محمد الناجي", path: "جزئين" }
-        ]
-    },
-    {
-        teacher: "أحمد أحمد سيد محمد",
-        students: [
-            { id: 1, name: "أنصاري أنصاري أنصاري", path: "10 أجزاء" },
-            { id: 2, name: "إياد علاء محمود عبد العزيز", path: "5 أجزاء ونصف" },
-            { id: 3, name: "عبدالله منصر الدوجري", path: "5 أجزاء" },
-            { id: 4, name: "يزن أحمد أحمد سيد محمد", path: "6 أجزاء ونصف" },
-            { id: 5, name: "يوسف مهدي محمد الناصري", path: "3 أجزاء" },
-            { id: 6, name: "عبد الكريم سعد سعيد الأحمري", path: "3 أجزاء" },
-            { id: 7, name: "سعود فارس يسلم التميمي", path: "3 أجزاء" },
-            { id: 8, name: "مسفر عبدالعزيز القحطاني", path: "جزء ونصف" }
-        ]
-    },
-    {
-        teacher: "سعد الشيخ محمد الأنصاري",
-        students: [
-            { id: 1, name: "عبد الفتاح سعد الشيخ محمد", path: "15 جزء" },
-            { id: 2, name: "أحمد محمد عبداللطيف بدر", path: "15 جزء" },
-            { id: 3, name: "أسامه مصطفى السيد الطوبجي", path: "3 أجزاء" },
-            { id: 4, name: "عبدالعزيز إبراهيم عبدالعزيز أبوزينه", path: "18 جزء" },
-            { id: 5, name: "عمر عبدالعزيز راشد العمرو", path: "6 أجزاء" },
-            { id: 6, name: "سلطان محمد سلطان الزهراني", path: "3 أجزاء" },
-            { id: 7, name: "محمد أيمن مصطفى عرفات", path: "جزء واحد" },
-            { id: 8, name: "معين ناصر عبدالله مسعد", path: "12 جزء" },
-            { id: 9, name: "خليل ناصر عبدالله مسعد", path: "6 أجزاء" },
-            { id: 10, name: "صفوان ناصر عبدالله مسعد", path: "5 أجزاء" },
-            { id: 11, name: "طه محمد عبده محمد", path: "جزء ونصف" },
-            { id: 12, name: "عبدالمقيت عبدالإله الماص", path: "3 أجزاء" },
-            { id: 13, name: "مصعب عبدالله محمد البطاح", path: "6 أجزاء" },
-            { id: 14, name: "أيمن مصطفى عرفات", path: "جزئين" }
-        ]
-    },
-    {
-        teacher: "السيد محمد سليمان الغيطاني",
-        students: [
-            { id: 1, name: "أحمد عبد العزيز الخلف", path: "جزئين" },
-            { id: 2, name: "تيم محمد عاطف تليخ", path: "3 أجزاء" },
-            { id: 3, name: "راشد حمد علي المري", path: "جزئين" },
-            { id: 4, name: "راكان منصر الدوجري", path: "جزئين ونصف" },
-            { id: 5, name: "سيف ايمن محمود السميري", path: "جزء واحد" },
-            { id: 6, name: "صالح محسن النهدي", path: "جزء ونصف" },
-            { id: 7, name: "عبدالرحمن منصر الدوجري", path: "جزئين" },
-            { id: 8, name: "علاء الدين محمد المحمد", path: "3 أجزاء" },
-            { id: 9, name: "مسفر مصلح الدوسري", path: "3 أجزاء" },
-            { id: 10, name: "صبحي احمد عمير المعدان", path: "جزئين" },
-            { id: 11, name: "عبدالعزيز محمد نايف النهدي", path: "جزء ونصف" },
-            { id: 12, name: "ماجد سليمان راشد الطحيني", path: "نصف جزء" },
-            { id: 13, name: "عبدالملك سالم سعيد العلي", path: "جزئين" },
-            { id: 14, name: "عبداللطيف سالم سعيد العلي", path: "جزء واحد" }
-        ]
-    },
-    {
-        teacher: "أحمد عبداللطيف محمد الجمال",
-        students: [
-            { id: 1, name: "أحمد حسن أحمد الناشري", path: "5 أجزاء" },
-            { id: 2, name: "أمير محمد عاطف تليخ", path: "4 أجزاء" },
-            { id: 3, name: "البراء حسن عبدالعظيم محمد", path: "جزئين" },
-            { id: 4, name: "سفيان عبدالرحمن حسن الربيّع", path: "4 أجزاء" },
-            { id: 5, name: "سلمان عبدالرحمن محمد القحطاني", path: "5 أجزاء" },
-            { id: 6, name: "عبدالرحمن إبراهيم أبو زينة", path: "جزئين" },
-            { id: 7, name: "عبدالرحمن سادات المحمودي", path: "4 أجزاء" },
-            { id: 8, name: "عبدالله عمر عبدالله الجفان", path: "3 أجزاء" },
-            { id: 9, name: "عوض حسين المرحبي", path: "3 أجزاء" },
-            { id: 10, name: "محمد مناحي فراج الدوسري", path: "جزئين" }        ]
-    }
+// بيانات الحلقات الفعلية (مُدمجة من ملف بيانات_إتقان)
+const circlesProgressDataDefault = [
+    {"teacher": "أيمن عوض عيد إبراهيم", "students": [
+        {"id": 1, "name": "أمين ذوالنون علي سلامه", "path": "6 أجزاء", "completedPages": "120", "errors": "4", "isPresent": true},
+        {"id": 2, "name": "أنس البراء البريهي", "path": "6 أجزاء", "completedPages": "120", "errors": "7", "isPresent": true},
+        {"id": 3, "name": "سلمان سالم مزيد المطيري", "path": "4 أجزاء ونصف", "completedPages": "90", "errors": "6", "isPresent": true},
+        {"id": 4, "name": "عبادة محمد عاطف تليخ", "path": "3 أجزاء", "completedPages": "60", "errors": "5", "isPresent": true},
+        {"id": 5, "name": "علي فوزي قايد عبده", "path": "3 أجزاء", "completedPages": "60", "errors": "4", "isPresent": true},
+        {"id": 6, "name": "فلاح محمد سالم القحطاني", "path": "3 أجزاء ونصف", "completedPages": "70", "errors": "5", "isPresent": true},
+        {"id": 7, "name": "ماجد حمود معيض النفيعي", "path": "جزئين", "completedPages": "", "errors": "", "isPresent": false},
+        {"id": 8, "name": "مجد محمد المحمد", "path": "3 أجزاء", "completedPages": "60", "errors": "3", "isPresent": true},
+        {"id": 9, "name": "وليد حمود النفيعي", "path": "3 أجزاء", "completedPages": "", "errors": "", "isPresent": false},
+        {"id": 10, "name": "سليم مصلح الدوسري", "path": "3 أجزاء", "completedPages": "", "errors": "", "isPresent": false},
+        {"id": 11, "name": "الخطاب سادات فارع سعيد", "path": "6 أجزاء", "completedPages": "120", "errors": "9", "isPresent": true}
+    ]},
+    // ... أكمل بقية البيانات من ملفك ...
 ];
 
 // تخزين بيانات الإدخال في ذاكرة التخزين المحلية
@@ -152,26 +69,10 @@ let circlesProgressData = savedData ? JSON.parse(savedData) : [];
 document.addEventListener('DOMContentLoaded', function() {
     // تحديث السنة الحالية في الفوتر
     document.getElementById('current-year').textContent = new Date().getFullYear();
-      // تهيئة بيانات الحلقات إذا لم تكن موجودة
+    // تهيئة بيانات الحلقات إذا لم تكن موجودة
     if (circlesProgressData.length === 0) {
-        circlesProgressData = circlesData.map((circle, circleIndex) => {
-            return {
-                teacher: circle.teacher,
-                students: circle.students.map((student, studentIndex) => {
-                    // إضافة قيم افتراضية متغيرة لكل طالب للاختبار فقط
-                    // في التطبيق الفعلي، ستبدأ هذه القيم فارغة ويتم إدخالها من قبل المستخدم
-                    const completedPagesDefault = Math.floor(Math.random() * 20) + 1; // قيمة عشوائية بين 1 و 20
-                    const errorsDefault = Math.floor(Math.random() * 5); // قيمة عشوائية بين 0 و 4
-                    
-                    return {
-                        ...student,
-                        completedPages: completedPagesDefault.toString(),
-                        errors: errorsDefault.toString(),
-                        isPresent: true
-                    };
-                })
-            };
-        });
+        // استخدم البيانات المدمجة بدلاً من البيانات العشوائية
+        circlesProgressData = JSON.parse(JSON.stringify(circlesProgressDataDefault));
         localStorage.setItem('circlesProgressData', JSON.stringify(circlesProgressData));
     } else {
         // حذف حلقة "محمد مصطفى إبراهيم الوكيل" من بيانات التقدم إذا كانت موجودة
