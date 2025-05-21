@@ -1,0 +1,149 @@
+.criterion-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 3px;
+    padding-right: 5px;
+}
+
+/* إضافة تأثيرات حركية لقائمة الطلاب المتفوقين */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.winner-students-list .top-student {
+    animation: fadeIn 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+.winner-students-list .rank-1 {
+    animation-delay: 0.1s;
+}
+
+.winner-students-list .rank-2 {
+    animation-delay: 0.2s;
+}
+
+.winner-students-list .rank-3 {
+    animation-delay: 0.3s;
+}
+
+/* تحسين مظهر الأقسام في الصفحة */
+.winner-circle {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.winner-circle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق قسم أفضل الطلاب في جميع الحلقات */
+.all-top-students-section {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.all-top-students-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    position: relative;
+    padding-right: 30px;
+}
+
+.all-top-students-title::before {
+    content: "🏆";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle-container {
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.circle-header-collapsible {
+    padding: 10px 15px;
+    background-color: rgba(0, 169, 157, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.circle-header-collapsible:hover {
+    background-color: rgba(0, 169, 157, 0.1);
+}
+
+.circle-name {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.circle-content-collapsible {
+    background-color: white;
+}
+
+.circle-top-students {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 10px;
+}
+
+.circle-top-student {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-right: 3px solid var(--primary-color);
+    animation: fadeIn 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+.circle-top-student.rank-1 {
+    border-right-color: gold;
+    animation-delay: 0.1s;
+}
+
+.circle-top-student.rank-2 {
+    border-right-color: silver;
+    animation-delay: 0.2s;
+}
+
+.circle-top-student.rank-3 {
+    border-right-color: #cd7f32;
+    animation-delay: 0.3s;
+}
+
+/* تحسين مظهر القوائم القابلة للطي */
+.collapsible-content {
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.circle-content-collapsible {
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}

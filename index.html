@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>نظام إتقان - تقييم حلقات التحفيظ</title>    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="missing-top-styles.css">
+    <link rel="stylesheet" href="top-students.css">
+    <link rel="stylesheet" href="winner-circle.css">
+    <link rel="stylesheet" href="winner-students.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">        <header>            <h1>تقرير برنامج اتقان يوم السبت : 19 / ذو القعدة / 1446</h1>
+            <p>حلقات جامع صالح العجيمي</p>
+        </header>
+
+        <main>
+            <div class="dashboard">            <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>نسبة الإنجاز الكلية</h3>                        <div class="progress-container">
+                            <div class="progress-bar" id="total-progress"></div>
+                            <span id="total-progress-text">0%</span>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="progress-chart"></canvas>
+                            <div class="chart-stats" id="progress-stats">
+                                <!-- سيتم تعبئة الإحصائيات عن طريق جافاسكريبت -->
+                            </div>
+                        </div>
+                    </div>                    <div class="stat-card">
+                        <h3>ترتيب الحلقات</h3>
+                        <div id="circles-ranking"></div>
+                    </div>
+                </div>                <div class="best-circle">                    <h2>أفضل 3 حلقات</h2>
+                    <div id="top-circles-container">
+                        <!-- سيتم تعبئة القائمة بأفضل 3 حلقات عن طريق جافاسكريبت -->
+                    </div>
+                </div>
+                  <div class="winner-circle">
+                    <h2>الحلقة الفائزة</h2>
+                    <div id="winner-circle-container">
+                        <!-- سيتم تعبئة الحلقة الفائزة عن طريق جافاسكريبت -->
+                    </div>                    <div class="criteria-container">
+                        <h3>معايير اختيار الحلقات والطلاب</h3>
+                        <ul id="winner-criteria">
+                            <!-- سيتم تعبئة المعايير عن طريق جافاسكريبت -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="circles-container">
+                <h2>الحلقات</h2>
+                <div class="filters">
+                    <input type="text" id="search-input" placeholder="بحث عن حلقة أو طالب...">
+            <select id="sort-select">
+                        <option value="progress">ترتيب حسب نسبة الإنجاز</option>
+                        <option value="points">ترتيب حسب النقاط</option>
+                        <option value="errors">ترتيب حسب عدد الأخطاء</option>
+                        <option value="alphabetical">ترتيب أبجدي</option>
+                    </select>
+                </div>
+                <div id="circles-list"></div>
+            </div>
+        </main>        <footer>            <div class="footer-actions">
+                <button id="export-data-btn" class="export-btn"><i class="fas fa-download"></i> تصدير البيانات</button>
+                <button id="import-data-btn" class="import-btn"><i class="fas fa-upload"></i> استيراد البيانات</button>
+                <input type="file" id="import-file-input" accept=".json" style="display: none;">
+            </div>
+            <p> اتقان &copy; <span id="current-year"></span></p>
+        </footer>
+    </div>
+
+    <!-- قالب الحلقة -->
+    <template id="circle-template">
+        <div class="circle-card">            <div class="circle-header">
+                <h3 class="circle-title"></h3>
+                <div class="circle-stats-container">
+                    <div class="circle-progress">
+                        <div class="progress-container">
+                            <div class="progress-bar"></div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>                    <div class="circle-points">
+                        <span class="points-label">النتيجة الإجمالية:</span>
+                        <span class="points-value">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-content">
+                <table class="students-table">                    <thead>
+                        <tr>
+                            <th>م</th>
+                            <th>اسم الطالب</th>
+                            <th>المسار المطلوب</th>
+                            <th>الصفحات المطلوبة</th>
+                            <th>نقاط/صفحة</th>
+                            <th>الصفحات المنجزة</th>
+                            <th>الأخطاء</th>
+                            <th>الحضور</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- سيتم إضافة الطلاب هنا من خلال جافا سكريبت -->
+                    </tbody>
+                </table>
+            </div>            <div class="circle-footer">
+                <button class="add-student-btn"><i class="fas fa-plus"></i> إضافة طالب</button>
+                <button class="save-btn">حفظ البيانات</button>
+            </div>
+        </div>
+    </template>    <div id="success-alert" class="alert">
+        <span>تم حفظ البيانات بنجاح!</span>
+    </div>
+
+    <!-- نافذة إضافة طالب جديد -->
+    <div id="add-student-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>إضافة طالب جديد</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="add-student-form">
+                    <div class="form-group">
+                        <label for="student-name">اسم الطالب</label>
+                        <input type="text" id="student-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-path">المسار</label>
+                        <select id="student-path" required>
+                            <!-- سيتم ملء هذه القائمة من خلال جافاسكريبت -->
+                        </select>
+                    </div>
+                    <input type="hidden" id="circle-index" value="">
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">إضافة الطالب</button>
+                        <button type="button" class="cancel-btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>    </div>
+
+    <script src="script.js"></script>
+    <script src="winner-circle.js"></script>
+    <script src="top-students.js"></script>
+</body>
+</html>

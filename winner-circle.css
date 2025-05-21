@@ -1,0 +1,121 @@
+.winner-note {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 169, 157, 0.05);
+    border-radius: var(--border-radius);
+    border-right: 3px solid var(--secondary-color);
+}
+
+.winner-note p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.winner-note ol {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.winner-note li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.criteria-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.student-criteria-title {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dashed #ddd;
+}
+
+/* تنسيق أفضل الطلاب داخل الحلقة الفائزة */
+.winner-top-students {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.collapsible-header {
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 169, 157, 0.08);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-header:hover {
+    background-color: rgba(0, 169, 157, 0.12);
+}
+
+.top-students-title {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.top-students-title::before {
+    content: "🏆";
+    margin-left: 8px;
+    font-size: 1.1rem;
+}
+
+.toggle-icon {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.collapsible-content {
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.winner-students-list {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+/* تنسيق كروت الطلاب داخل الحلقة الفائزة */
+.winner-students-list .top-student {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-right: 3px solid var(--primary-color);
+    transition: transform 0.2s ease;
+}
+
+.winner-students-list .top-student:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.winner-students-list .rank-1 {
+    border-right-color: gold;
+}
+
+.winner-students-list .rank-2 {
+    border-right-color: silver;
+}
+
+.winner-students-list .rank-3 {
+    border-right-color: #cd7f32;
+}

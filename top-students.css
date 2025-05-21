@@ -1,0 +1,132 @@
+/* تنسيق قسم أفضل الطلاب */
+.top-students {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-top: 3px solid var(--secondary-color);
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.top-students h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    position: relative;
+    padding-right: 20px;
+}
+
+.top-students h2::before {
+    content: "🏆";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#top-students-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.top-students-circle {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-right: 4px solid var(--primary-color);
+}
+
+.top-students-circle-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.top-students-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.top-student {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.top-student:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-student.rank-1 {
+    border-right: 5px solid gold;
+    background-color: rgba(255, 215, 0, 0.05);
+}
+
+.top-student.rank-2 {
+    border-right: 5px solid silver;
+    background-color: rgba(192, 192, 192, 0.05);
+}
+
+.top-student.rank-3 {
+    border-right: 5px solid #cd7f32; /* برونزي */
+    background-color: rgba(205, 127, 50, 0.05);
+}
+
+.student-rank {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.student-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.student-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.student-stats .stat {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.student-stats .stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.student-stats .stat-value {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* تخصيص للشاشات الصغيرة */
+@media (max-width: 768px) {
+    #top-students-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .student-stats {
+        grid-template-columns: 1fr;
+    }
+}
